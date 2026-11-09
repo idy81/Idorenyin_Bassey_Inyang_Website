@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Consultation - Digiforte Prime Properties</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">Idorenyin <span>Bassey</span> Inyang</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About & Leadership</a></li>
+                    <li><a href="projects.html">Projects & Portfolio</a></li>
+                    <li><a href="planner.html">Operations Board</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h1 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Corporate Inquiry & Consultation</h1>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">Reach out to Digiforte Prime Properties for real estate developments, PropTech security consultations, or luxury footwear inquiries.</p>
+
+            <div id="successBanner" class="success-banner"></div>
+
+            <form id="contactForm" style="background-color: var(--bg-secondary); padding: 2.5rem; border-radius: 10px; border: 1px solid var(--border-color);" novalidate>
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" placeholder="e.g. Arc. Emmanuel Okafor">
+                    <div id="nameError" class="error-msg"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="emailAddress">Email Address *</label>
+                    <input type="email" id="emailAddress" placeholder="e.g. client@digifortegroup.com">
+                    <div id="emailError" class="error-msg"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number (Digits only) *</label>
+                    <input type="text" id="phoneNumber" placeholder="e.g. 08031234567">
+                    <div id="phoneError" class="error-msg"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="clientMessage">Inquiry / Project Details *</label>
+                    <textarea id="clientMessage" rows="5" placeholder="Specify your real estate property requirements or security consultation request..."></textarea>
+                    <div id="messageError" class="error-msg"></div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem; padding: 0.9rem;">Submit Official Inquiry</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Idorenyin Bassey Inyang. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

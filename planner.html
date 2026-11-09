@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations & Academic Board - Digiforte Prime Properties</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">Idorenyin <span>Bassey</span> Inyang</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About & Leadership</a></li>
+                    <li><a href="projects.html">Projects & Portfolio</a></li>
+                    <li><a href="planner.html" class="active">Operations Board</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Operations & Academic Milestone Board</h1>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">Interactive task management portal powered by dynamic JavaScript for tracking site developments and cybersecurity studies.</p>
+
+        <section class="task-controls">
+            <h3 style="color: var(--accent-gold-light); margin-bottom: 1rem;">Add New Action Item</h3>
+            <form id="taskForm">
+                <div class="task-form-grid">
+                    <div class="form-group" style="margin-bottom:0;">
+                        <label for="taskTitle">Task Description</label>
+                        <input type="text" id="taskTitle" placeholder="e.g., Audit Smart Gate Authentication Protocol" required>
+                    </div>
+                    <div class="form-group" style="margin-bottom:0;">
+                        <label for="taskCategory">Domain Category</label>
+                        <select id="taskCategory">
+                            <option value="Real Estate Operations">Real Estate Operations</option>
+                            <option value="Cybersecurity Research">Cybersecurity Research</option>
+                            <option value="Richzone Luxury Retail">Richzone Luxury Retail</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin-bottom:0;">
+                        <label for="taskPriority">Priority Level</label>
+                        <select id="taskPriority">
+                            <option value="High">High Priority</option>
+                            <option value="Medium">Medium Priority</option>
+                            <option value="Low">Low Priority</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary" style="height: 44px; width: 100%;">Add Task</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h3 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 1rem;">Active Operational Milestones</h3>
+            <ul id="taskList" class="task-list">
+                <!-- Dynamic tasks generated via script.js -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Idorenyin Bassey Inyang. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
